@@ -92,8 +92,9 @@ close(FREQS);
 	print "Values at ",$temp,"K:\n"; 
 	print "ZPE (eV): ",$zpe,"\n"; 
 	print "Svib (eV/K): ",$Svib,"\n"; 
-	print "ST (eV): ",$Svib*$temp,"\n"; 
-	print "Ev (eV): ",$Evsum,"\n"; 
+	print "ST (eV):    ",$Svib*$temp,"\n"; 
+	print "Ev (eV):    ",$Evsum,"\n"; 
+	print "Ev-ST (eV): ",$Evsum-$Svib*$temp,"\n"; 
 
 
 
